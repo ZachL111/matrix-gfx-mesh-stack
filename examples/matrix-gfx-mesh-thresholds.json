@@ -1,0 +1,17 @@
+{
+  "repo": "matrix-gfx-mesh-stack",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 5,
+    "ship": 185,
+    "watch": 119
+  },
+  "terms": [
+    "geometry span",
+    "atlas pressure",
+    "shader drift",
+    "render budget"
+  ]
+}
