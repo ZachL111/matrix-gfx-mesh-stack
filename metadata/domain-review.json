@@ -1,0 +1,73 @@
+{
+  "repo": "matrix-gfx-mesh-stack",
+  "language": "Dart",
+  "category": "Graphics",
+  "goal": "Design a Dart verification harness for mesh systems, covering diagnostic reporting, negative fixtures, and failure-oriented tests.",
+  "review_model": {
+    "terms": [
+      "geometry span",
+      "atlas pressure",
+      "shader drift",
+      "render budget"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "geometry span",
+      "signal": 68,
+      "slack": 30,
+      "drag": 23,
+      "confidence": 94,
+      "score": 191,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "atlas pressure",
+      "signal": 56,
+      "slack": 44,
+      "drag": 31,
+      "confidence": 94,
+      "score": 157,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "shader drift",
+      "signal": 52,
+      "slack": 49,
+      "drag": 32,
+      "confidence": 94,
+      "score": 151,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "render budget",
+      "signal": 85,
+      "slack": 34,
+      "drag": 32,
+      "confidence": 94,
+      "score": 202,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "geometry span",
+      "signal": 71,
+      "slack": 44,
+      "drag": 32,
+      "confidence": 94,
+      "score": 184,
+      "lane": "ship"
+    }
+  ]
+}
